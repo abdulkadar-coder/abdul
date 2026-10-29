@@ -453,6 +453,7 @@ ul, ol {
 
 .hero-role .sep {
   color: var(--accent);
+  margin-right: 0.35rem;
 }
 
 .hero-lead {
@@ -655,13 +656,7 @@ ul, ol {
 
 .marquee-track {
   display: flex;
-  gap: 2.4rem;
   width: max-content;
-  animation: marquee 38s linear infinite;
-}
-
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
 }
 
 .marquee-track span {
@@ -672,17 +667,6 @@ ul, ol {
   text-transform: uppercase;
   color: var(--muted-2);
   white-space: nowrap;
-}
-
-.marquee-track span::after {
-  content: "/";
-  position: absolute;
-  right: -1.35rem;
-  color: rgba(200, 255, 61, 0.45);
-}
-
-@keyframes marquee {
-  to { transform: translateX(-50%); }
 }
 
 /* =========================================================
@@ -1251,6 +1235,14 @@ ul, ol {
   display: grid;
   gap: 0.3rem;
   min-width: 0;
+}
+
+.research-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
 }
 
 .research-title {
@@ -2194,5 +2186,342 @@ body.dialog-open {
   }
   .research-row {
     break-inside: avoid;
+  }
+}
+
+/* =========================================================
+   React + GSAP + Lenis + React Bits integration
+   ========================================================= */
+
+#root {
+  min-height: 100svh;
+}
+
+/* ---------- Lenis ---------- */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body.is-locked,
+body.nav-open,
+body.dialog-open {
+  overflow: hidden;
+}
+
+/* ---------- Fixed chrome ---------- */
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 130;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--cyan));
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  pointer-events: none;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: soft-light;
+}
+
+.to-top-btn {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 110;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: rgba(6, 8, 10, 0.72);
+  color: var(--muted);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s var(--ease), color 0.2s, background 0.2s,
+    border-color 0.2s;
+}
+
+.to-top-btn.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.to-top-btn:hover {
+  color: #070a05;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------- Heading reveal masks ---------- */
+.heading-mask {
+  overflow: hidden;
+  padding-bottom: 0.12em;
+}
+
+.heading-mask > h2 {
+  will-change: transform;
+}
+
+/* ---------- Hero split text ---------- */
+.hero-line {
+  display: block;
+}
+
+.hero-title-accent {
+  display: inline-block;
+  margin-left: 0.12em;
+}
+
+.split-parent {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.split-char,
+.split-word,
+.split-line {
+  will-change: transform;
+}
+
+/* ---------- Magnet ---------- */
+.magnet,
+.magnet-inner {
+  display: inline-flex;
+}
+
+/* ---------- Terminal decrypt ---------- */
+.terminal-body .decrypted {
+  color: var(--text);
+}
+
+/* ---------- Scroll velocity marquee ---------- */
+.marquee-wrap {
+  position: relative;
+}
+
+.marquee-track {
+  animation: none;
+  gap: 0;
+}
+
+.marquee-text {
+  line-height: 1.5 !important;
+}
+
+/* ---------- CountUp ---------- */
+.stat-count {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* ---------- SpotlightCard overrides ---------- */
+.project.spotlight-card {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.006));
+  box-shadow: none;
+}
+
+.project--featured.spotlight-card {
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background:
+    radial-gradient(700px 300px at 90% 0%, rgba(200, 255, 61, 0.055), transparent 70%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.006));
+}
+
+.about-card.spotlight-card {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  background: linear-gradient(170deg, var(--surface-2), var(--bg-soft));
+  box-shadow: none;
+}
+
+.contact-panel.spotlight-card {
+  padding: clamp(1.6rem, 4vw, 3.2rem);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(700px 300px at 88% -10%, rgba(200, 255, 61, 0.06), transparent 70%),
+    linear-gradient(165deg, rgba(17, 24, 28, 0.96), rgba(7, 10, 12, 0.98));
+  box-shadow: 0 40px 110px -70px rgba(0, 0, 0, 0.9);
+}
+
+.contact-panel .contact-inner {
+  position: relative;
+}
+
+.contact-panel .contact-title {
+  font-size: clamp(2.3rem, 6.2vw, 4.6rem);
+}
+
+.contact-panel .contact-lead {
+  max-width: 56ch;
+}
+
+.copy-email svg {
+  transition: transform 0.2s var(--ease);
+}
+
+.copy-email.is-copied {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.copy-email.is-copied svg {
+  transform: scale(1.08);
+}
+
+/* ---------- Project card entrance ---------- */
+.spotlight-project {
+  animation: spotlightIn 0.55s var(--ease) backwards;
+}
+
+@keyframes spotlightIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.99);
+  }
+}
+
+/* ---------- Dialog ---------- */
+.case-close {
+  position: sticky;
+  top: 0.4rem;
+  right: auto;
+  z-index: 5;
+  margin-left: auto;
+  margin-bottom: 0.4rem;
+  background: rgba(6, 8, 10, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.case-header {
+  padding-right: 0;
+}
+
+.case-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- Responsive additions ---------- */
+@media (max-width: 1080px) {
+  .contact-panel .contact-title {
+    font-size: clamp(2.2rem, 6.4vw, 3.6rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-card.spotlight-card {
+    position: static;
+    top: auto;
+  }
+
+  .contact-panel.spotlight-card {
+    padding: clamp(1.4rem, 4vw, 2.2rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .project.spotlight-card,
+  .about-card.spotlight-card,
+  .project--featured.spotlight-card {
+    padding: 1.2rem;
+  }
+
+  .contact-panel.spotlight-card {
+    padding: 1.25rem;
+  }
+
+  .contact-panel .contact-title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-actions .magnet,
+  .contact-actions .magnet-inner {
+    width: 100%;
+  }
+
+  .to-top-btn {
+    width: 42px;
+    height: 42px;
+    right: 0.9rem;
+    bottom: 0.9rem;
+  }
+}
+
+/* ---------- Reduced motion additions ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-project {
+    animation: none;
+  }
+
+  .heading-mask > h2 {
+    transform: none !important;
+  }
+}
+
+/* ---------- Print additions ---------- */
+@media print {
+  body::after,
+  .scroll-progress,
+  .to-top-btn {
+    display: none !important;
+  }
+
+  .spotlight-card__light,
+  .spotlight-card__grain,
+  .spotlight-card__border,
+  .spotlight-card__edge {
+    display: none !important;
+  }
+
+  .project.spotlight-card,
+  .about-card.spotlight-card,
+  .contact-panel.spotlight-card {
+    background: none;
+    box-shadow: none;
   }
 }
