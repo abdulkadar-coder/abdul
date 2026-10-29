@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Abdul Kadar P — Cybersecurity &amp; Application Security</title>
+  <meta name="description" content="Entry-level cybersecurity professional focused on web application security, reconnaissance and vulnerability assessment. Bug bounty research, CTF experience and security tooling." />
+  <meta name="author" content="Syed Abdul Kadar P" />
+  <meta name="theme-color" content="#06080a" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Syed Abdul Kadar P" />
+  <meta property="og:title" content="Syed Abdul Kadar P — Cybersecurity &amp; Application Security" />
+  <meta property="og:description" content="Web application security, reconnaissance and vulnerability research. Three disclosed bug bounty findings, CTF competitor and security tooling builder." />
+  <meta property="og:url" content="https://abdulkadar-coder.github.io/abdulkadar-tech/" />
+  <meta property="og:image" content="https://abdulkadar-coder.github.io/abdulkadar-tech/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Syed Abdul Kadar P — cybersecurity portfolio hero with terminal panel" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Syed Abdul Kadar P — Cybersecurity &amp; Application Security" />
+  <meta name="twitter:description" content="Web application security, reconnaissance and vulnerability research." />
+  <meta name="twitter:image" content="https://abdulkadar-coder.github.io/abdulkadar-tech/assets/og-cover.png" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c8ff3d'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='34' font-weight='700' text-anchor='middle' fill='%2306080a'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      @media (max-width: 780px) {
+        .nav {
+          position: static;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background: none;
+          border: 0;
+          padding: 0;
+        }
+        .nav a { border: 0; padding: 0.35rem 0; }
+        .nav-toggle, .nav-foot { display: none; }
+        .header-inner { flex-wrap: wrap; row-gap: 0.5rem; }
+        .site-header { height: auto; padding-block: 0.8rem; position: static; }
+        .hero { padding-top: 3rem; }
+      }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Abdul Kadar P",
+    "jobTitle": "Cybersecurity Analyst",
+    "email": "mailto:syedabdulkadar8@gmail.com",
+    "telephone": "+91-7094762770",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressRegion": "Tamil Nadu", "addressCountry": "IN" },
+    "url": "https://abdulkadar-coder.github.io/abdulkadar-tech/",
+    "sameAs": [
+      "https://github.com/abdulkadar-coder",
+      "https://www.linkedin.com/in/syed-abdul-kadar-382522328",
+      "https://tryhackme.com/p/abdulkadar4416"
+    ],
+    "knowsAbout": ["Web Application Security", "Penetration Testing", "Reconnaissance", "Vulnerability Assessment", "Bug Bounty"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Syed Abdul Kadar — home">
+        <span class="brand-mark">SAK</span>
+        <span class="brand-slash">//</span>
+        <span class="brand-text">security</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#about"><span>01</span>About</a>
+        <a href="#skills"><span>02</span>Skills</a>
+        <a href="#projects"><span>03</span>Projects</a>
+        <a href="#research"><span>04</span>Research</a>
+        <a href="#experience"><span>05</span>Experience</a>
+        <a href="#credentials"><span>06</span>Credentials</a>
+        <a href="#contact"><span>07</span>Contact</a>
+
+        <div class="nav-foot">
+          <p><span class="status-dot" aria-hidden="true"></span> Open to junior security roles</p>
+          <a href="mailto:syedabdulkadar8@gmail.com">syedabdulkadar8@gmail.com</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--sm btn--ghost resume-link" href="assets/resume/Syed-Abdul-Kadar-Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          Resume
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to junior pentest / appsec roles
+          </p>
+
+          <h1 class="hero-title reveal">
+            Syed Abdul<br />
+            Kadar <span class="hero-title-accent">P</span>
+          </h1>
+
+          <p class="hero-role reveal">
+            <span>Cybersecurity</span>
+            <span class="sep" aria-hidden="true">/</span>
+            <span>Web Application Security</span>
+            <span class="sep" aria-hidden="true">/</span>
+            <span>Penetration Testing</span>
+          </p>
+
+          <p class="hero-lead reveal">
+            I explore systems, break assumptions and validate real vulnerabilities — then write them up with clear impact and a working proof of concept. Currently hunting bugs, competing in CTFs and building security-focused tools.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn--primary" href="#research">
+              View research
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <a href="https://github.com/abdulkadar-coder" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/syed-abdul-kadar-382522328" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://tryhackme.com/p/abdulkadar4416" target="_blank" rel="noopener">TryHackMe</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <p>kadar@kali: ~/recon</p>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="out">syed_abdul_kadar</p>
+
+              <p><span class="prompt">$</span> cat focus.txt</p>
+              <p class="out">web app security · recon · vuln research</p>
+
+              <p><span class="prompt">$</span> ls ./findings</p>
+              <p class="out"><span class="accent">carenium_kyc</span> &nbsp;dekco_pacs &nbsp;vibinex_sqli</p>
+
+              <p><span class="prompt">$</span> ./status --current</p>
+              <p class="out"><span class="ok">[+]</span> 3 vulnerability reports filed</p>
+              <p class="out"><span class="ok">[+]</span> 4 internships completed</p>
+              <p class="out"><span class="ok">[+]</span> ready for offensive security work</p>
+
+              <p class="terminal-caret"><span class="prompt">$</span> <span class="caret"></span></p>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="3">03</span>
+              <span class="stat-label">Vulnerability reports</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="4">04</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="6">06</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Burp Suite</span><span>Nmap</span><span>SQLMap</span><span>Metasploit</span><span>Kali Linux</span><span>OWASP Top 10</span><span>Reconnaissance</span><span>Responsible Disclosure</span><span>Web App Security</span><span>CTF</span>
+        <span>Burp Suite</span><span>Nmap</span><span>SQLMap</span><span>Metasploit</span><span>Kali Linux</span><span>OWASP Top 10</span><span>Reconnaissance</span><span>Responsible Disclosure</span><span>Web App Security</span><span>CTF</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span>01</span> About me</p>
+          <h2 class="reveal">Curious by default.<br /><em>Methodical</em> by training.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              I'm an entry-level cybersecurity professional based in Chennai, focused on web application security, reconnaissance and vulnerability assessment.
+            </p>
+            <p>
+              My workflow is simple: map the attack surface, test the assumptions a developer made, confirm the issue with a minimal proof of concept, and report it so the fix is obvious. I work with Burp Suite, Nmap, SQLMap and Metasploit on Kali Linux, and I document findings with reproduction steps and business impact rather than raw tool output.
+            </p>
+            <p>
+              Outside of assessments I take part in bug bounty programs, build security tooling and compete in CTFs — including international rounds with Team P4X7. I'm currently looking for a junior role in penetration testing or application security.
+            </p>
+
+            <ul class="about-facts">
+              <li>
+                <span class="fact-label">Based in</span>
+                <span>Chennai, Tamil Nadu, India</span>
+              </li>
+              <li>
+                <span class="fact-label">Focus</span>
+                <span>Web app sec · pentesting · recon</span>
+              </li>
+              <li>
+                <span class="fact-label">Status</span>
+                <span class="fact-status">Available for opportunities</span>
+              </li>
+              <li>
+                <span class="fact-label">Languages</span>
+                <span>English, Tamil</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="about-card reveal" aria-label="Quick profile">
+            <div class="about-card-top">
+              <div class="avatar" aria-hidden="true">SAK</div>
+              <div>
+                <p class="about-name">Syed Abdul Kadar P</p>
+                <p class="about-role">Security researcher</p>
+              </div>
+            </div>
+
+            <div class="about-meta">
+              <div>
+                <span>Email</span>
+                <a href="mailto:syedabdulkadar8@gmail.com">syedabdulkadar8@gmail.com</a>
+              </div>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+917094762770">+91 70947 62770</a>
+              </div>
+              <div>
+                <span>Profiles</span>
+                <p class="about-links">
+                  <a href="https://github.com/abdulkadar-coder" target="_blank" rel="noopener">GitHub ↗</a>
+                  <a href="https://tryhackme.com/p/abdulkadar4416" target="_blank" rel="noopener">THM ↗</a>
+                </p>
+              </div>
+            </div>
+
+            <a class="about-resume" href="assets/resume/Syed-Abdul-Kadar-Resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+              Download resume
+              <span>PDF</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--panel" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span>02</span> Capabilities</p>
+          <h2 class="reveal">The toolkit I <em>actually</em> use.</h2>
+          <p class="section-lead reveal">Grouped by what I do, not by buzzword count. Every tool here has been used on a lab, a CTF or a live assessment.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">01</span>
+              <h3>Web Application Security</h3>
+            </div>
+            <p>Finding and proving issues in real applications, from input handling to broken access control.</p>
+            <ul class="chips">
+              <li>OWASP Top 10</li>
+              <li>SQL Injection</li>
+              <li>XSS</li>
+              <li>IDOR</li>
+              <li>AuthN / AuthZ testing</li>
+              <li>API security</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">02</span>
+              <h3>Recon &amp; Assessment</h3>
+            </div>
+            <p>Building the map before testing anything: assets, subdomains, services and exposed surfaces.</p>
+            <ul class="chips">
+              <li>Asset discovery</li>
+              <li>Subdomain enumeration</li>
+              <li>Network scanning</li>
+              <li>Directory checks</li>
+              <li>Info disclosure</li>
+              <li>SSL/TLS misconfig</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">03</span>
+              <h3>Security Tooling</h3>
+            </div>
+            <p>The daily drivers for interception, enumeration, exploitation and post-exploitation validation.</p>
+            <ul class="chips">
+              <li>Burp Suite</li>
+              <li>Nmap</li>
+              <li>SQLMap</li>
+              <li>Metasploit</li>
+              <li>Kali Linux</li>
+              <li>OWASP</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">04</span>
+              <h3>Programming</h3>
+            </div>
+            <p>Writing the scripts, APIs and tools that support testing and automate the boring parts.</p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript / TypeScript</li>
+              <li>C</li>
+              <li>REST APIs</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">05</span>
+              <h3>Systems &amp; Platforms</h3>
+            </div>
+            <p>Comfortable across both worlds, with a preference for the terminal.</p>
+            <ul class="chips">
+              <li>Linux</li>
+              <li>Windows</li>
+              <li>Hyperledger Fabric</li>
+              <li>Supabase / Postgres</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-index">06</span>
+              <h3>Security Practice</h3>
+            </div>
+            <p>The non-glamorous half of security: documentation, triage and disclosure that gets taken seriously.</p>
+            <ul class="chips">
+              <li>Vulnerability assessment</li>
+              <li>Bug bounty</li>
+              <li>PoC development</li>
+              <li>Responsible disclosure</li>
+              <li>Report writing</li>
+              <li>CVSS scoring</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow reveal"><span>03</span> Selected work</p>
+            <h2 class="reveal">Things I've <em>built</em>.</h2>
+            <p class="section-lead reveal">Security-first engineering, full-stack products and research labs.</p>
+          </div>
+
+          <div class="filters reveal" role="group" aria-label="Filter projects">
+            <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" data-filter="security" aria-pressed="false">Security</button>
+            <button class="filter" data-filter="fullstack" aria-pressed="false">Full stack</button>
+            <button class="filter" data-filter="ai" aria-pressed="false">AI</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project project--featured reveal" data-category="security fullstack">
+            <div class="project-top">
+              <span class="project-index">01 / Featured</span>
+              <div class="project-links">
+                <a href="https://github.com/abdulkadar-coder/decentralizeddb" target="_blank" rel="noopener" aria-label="ZeroTrust HRMS on GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3>ZeroTrust HRMS</h3>
+              <p class="project-sub">Zero-trust employee data management system</p>
+              <p>
+                A TypeScript REST API where authorization is re-checked on every request, not just at login. Documents are encrypted with AES-256-GCM using context-bound AAD and SHA-256 integrity checks, so only ciphertext ever reaches storage. An append-only, hash-linked audit chain records every sensitive action.
+              </p>
+              <p>
+                The data layer runs on a four-organisation Hyperledger Fabric network, validated by 69 automated tests and 38 live checks.
+              </p>
+            </div>
+
+            <ul class="project-metrics">
+              <li><strong>69</strong><span>automated tests</span></li>
+              <li><strong>38</strong><span>live checks</span></li>
+              <li><strong>4-org</strong><span>Fabric network</span></li>
+            </ul>
+
+            <ul class="chips project-tags">
+              <li>TypeScript</li>
+              <li>JWT</li>
+              <li>AES-256-GCM</li>
+              <li>Hyperledger Fabric</li>
+              <li>Zero trust</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-category="ai fullstack">
+            <div class="project-top">
+              <span class="project-index">02</span>
+            </div>
+            <div class="project-body">
+              <h3>AI Interview</h3>
+              <p class="project-sub">Adaptive interview assessment platform</p>
+              <p>
+                An AI-powered interview platform that conducts adaptive interviews through real-time voice interaction, evaluates responses and generates performance analytics for each candidate.
+              </p>
+            </div>
+            <ul class="chips project-tags">
+              <li>AI</li>
+              <li>Full stack</li>
+              <li>Voice</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-category="security">
+            <div class="project-top">
+              <span class="project-index">03</span>
+            </div>
+            <div class="project-body">
+              <h3>ReconForge</h3>
+              <p class="project-sub">Unified reconnaissance toolkit</p>
+              <p>
+                A terminal-based toolkit that organises multiple reconnaissance and enumeration utilities into a single, repeatable workflow — so recon output stays consistent instead of scattered across one-off commands.
+              </p>
+            </div>
+            <ul class="chips project-tags">
+              <li>Python</li>
+              <li>Recon</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-category="ai security">
+            <div class="project-top">
+              <span class="project-index">04</span>
+            </div>
+            <div class="project-body">
+              <h3>Terms Analyzer</h3>
+              <p class="project-sub">Privacy policy risk scanner</p>
+              <p>
+                A browser security extension that analyses website terms and privacy policies, flagging risky, misleading or concerning clauses before the user agrees to them.
+              </p>
+            </div>
+            <ul class="chips project-tags">
+              <li>Browser extension</li>
+              <li>NLP</li>
+              <li>Privacy</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-category="security">
+            <div class="project-top">
+              <span class="project-index">05</span>
+              <div class="project-links">
+                <a href="https://github.com/abdulkadar-coder/cybermart-lab-" target="_blank" rel="noopener" aria-label="Web Sec Lab on GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Web Sec Lab</h3>
+              <p class="project-sub">Documented offensive security research</p>
+              <p>
+                A research project that applies offensive security and web application testing techniques to real targets, documenting methodology, evidence and remediation rather than just payloads.
+              </p>
+            </div>
+            <ul class="chips project-tags">
+              <li>Offensive security</li>
+              <li>Web testing</li>
+              <li>Research</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-category="fullstack">
+            <div class="project-top">
+              <span class="project-index">06</span>
+              <div class="project-links">
+                <a href="https://github.com/abdulkadar-coder/foodmanagementweb" target="_blank" rel="noopener" aria-label="Canteen Portal on GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Canteen Portal</h3>
+              <p class="project-sub">Full-stack food ordering platform</p>
+              <p>
+                A canteen management platform with role-based access, real-time order tracking and dashboards for ordering, inventory and day-to-day operations.
+              </p>
+            </div>
+            <ul class="chips project-tags">
+              <li>Full stack</li>
+              <li>RBAC</li>
+              <li>Dashboards</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="projects-empty" id="projectsEmpty" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section section--panel" id="research">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span>04</span> Vulnerability research</p>
+          <h2 class="reveal">Findings, not <em>claims</em>.</h2>
+          <p class="section-lead reveal">
+            Three security issues I found, validated and reported. Open a finding for the full methodology, proof of concept and remediation.
+          </p>
+        </div>
+
+        <div class="research-list">
+          <button class="research-row reveal" data-case="carenium" aria-haspopup="dialog">
+            <span class="severity severity--critical">Critical</span>
+            <span class="research-main">
+              <span class="research-title">Carenium — KYC &amp; passport data exposure</span>
+              <span class="research-meta">Supabase anon key in production JS · permissive RLS · public storage bucket · CVSS 9.1</span>
+            </span>
+            <span class="research-id">DISCLOSED</span>
+            <span class="research-open" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg>
+            </span>
+          </button>
+
+          <button class="research-row reveal" data-case="dekco" aria-haspopup="dialog">
+            <span class="severity severity--critical">Critical</span>
+            <span class="research-main">
+              <span class="research-title">Dekco — unauthenticated Orthanc PACS admin API</span>
+              <span class="research-meta">Patient PHI + raw DICOM exposed · writable server · CWE-285</span>
+            </span>
+            <span class="research-id">#73328074</span>
+            <span class="research-open" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg>
+            </span>
+          </button>
+
+          <button class="research-row reveal" data-case="vibinex" aria-haspopup="dialog">
+            <span class="severity severity--high">High</span>
+            <span class="research-main">
+              <span class="research-title">Vibinex — unauthenticated SQL injection &amp; DB write</span>
+              <span class="research-meta">Unparameterised UPDATE · no auth on /api/dpu/aliases · CWE-89</span>
+            </span>
+            <span class="research-id">#80036429</span>
+            <span class="research-open" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg>
+            </span>
+          </button>
+        </div>
+
+        <p class="research-note reveal">
+          All testing was performed within program scope or client authorisation, without destructive actions or mass exfiltration. Sensitive personal data is redacted from every public write-up.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span>05</span> Experience</p>
+          <h2 class="reveal">Where I've <em>learned</em>.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-meta">
+              <span class="timeline-period">Oct 2025 — Present</span>
+              <span class="timeline-type">Virtual internship</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Cybersecurity &amp; Web Application Security Intern</h3>
+              <p class="timeline-org">NullClass</p>
+              <ul>
+                <li>Test web applications for OWASP Top 10 vulnerabilities, including SQL injection, XSS, IDOR and broken access control.</li>
+                <li>Take part in bug bounty programs and document each finding with reproduction steps, impact and proof of concept.</li>
+                <li>Review triage feedback to understand how reports are validated and improve responsible disclosure practice.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-meta">
+              <span class="timeline-period">Sep 2026</span>
+              <span class="timeline-type">8-week program</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Web Exploit Hunting &amp; Bug Bounty Intern</h3>
+              <p class="timeline-org">EduSkills</p>
+              <ul>
+                <li>Completed an eight-week program covering bug bounty fundamentals, lab setup, reconnaissance and information leakage.</li>
+                <li>Practised SSL/TLS and cookie security checks, scanning, enumeration and web exploitation, finishing with a capstone project.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-meta">
+              <span class="timeline-period">Internship</span>
+              <span class="timeline-type">Network security</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Network Security Intern</h3>
+              <p class="timeline-org">Extazee Software</p>
+              <ul>
+                <li>Learned core network security concepts and built a foundation in network assessment and spotting potential weaknesses.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-meta">
+              <span class="timeline-period">Internship</span>
+              <span class="timeline-type">Project based</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Cybersecurity Project Intern</h3>
+              <p class="timeline-org">DG Interns Hub</p>
+              <ul>
+                <li>Completed project-based cybersecurity tasks that applied security concepts to practical, real-world problems.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section section--panel" id="credentials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span>06</span> Credentials</p>
+          <h2 class="reveal">Certifications &amp; <em>competition</em>.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="credential reveal">
+            <span class="credential-year">2025</span>
+            <h3>Cybersecurity &amp; Web Application Penetration Testing</h3>
+            <p>NullClass</p>
+            <span class="credential-tag">Certification</span>
+          </article>
+
+          <article class="credential reveal">
+            <span class="credential-year">2025</span>
+            <h3>Python Programming</h3>
+            <p>CodeTantra · Feb — Jun 2025</p>
+            <span class="credential-tag">Certification</span>
+          </article>
+
+          <article class="credential reveal">
+            <span class="credential-year">2025</span>
+            <h3>Web Application Development</h3>
+            <p>Star Systems · Mar 2025</p>
+            <span class="credential-tag">Certification</span>
+          </article>
+
+          <article class="credential reveal">
+            <span class="credential-year">2024</span>
+            <h3>Cyber Security for Beginners</h3>
+            <p>TCS · Nov 2024</p>
+            <span class="credential-tag">Certification</span>
+          </article>
+
+          <article class="credential reveal">
+            <span class="credential-year">Training</span>
+            <h3>WiFi Penetration Testing</h3>
+            <p>Wireless network assessment, weak encryption and misconfiguration testing.</p>
+            <span class="credential-tag">Additional</span>
+          </article>
+
+          <article class="credential reveal">
+            <span class="credential-year">Training</span>
+            <h3>Cyber Simulation</h3>
+            <p>Hands-on simulated cyber scenarios and incident response exercises.</p>
+            <span class="credential-tag">Additional</span>
+          </article>
+        </div>
+
+        <div class="competitions">
+          <h3 class="competitions-title reveal">Competitions</h3>
+
+          <div class="competition-grid">
+            <article class="competition reveal">
+              <span class="competition-badge">International CTF</span>
+              <h4>Into the Void 2.0</h4>
+              <p>Chennai Institute of Technology · Team P4X7</p>
+            </article>
+
+            <article class="competition reveal">
+              <span class="competition-badge">Hackathon</span>
+              <h4>Hackathon 2025</h4>
+              <p>National Cyber Security Research Council · IIT Madras</p>
+            </article>
+
+            <article class="competition reveal">
+              <span class="competition-badge">CTF</span>
+              <h4>ByteBeat 2025</h4>
+              <p>SRM Institute of Science and Technology</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow reveal"><span>07</span> Contact</p>
+        <h2 class="contact-title reveal">Let's find what's<br /><em>breakable</em>.</h2>
+        <p class="contact-lead reveal">
+          Open to junior penetration testing and application security roles, internships and research collaborations. I usually reply within a day.
+        </p>
+
+        <div class="contact-actions reveal">
+          <a class="btn btn--primary btn--lg" href="mailto:syedabdulkadar8@gmail.com?subject=Security%20role%20/%20collaboration">
+            syedabdulkadar8@gmail.com
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg>
+          </a>
+          <button class="btn btn--ghost btn--lg" id="copyEmail" data-email="syedabdulkadar8@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+            <span>Copy email</span>
+          </button>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="https://github.com/abdulkadar-coder" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/syed-abdul-kadar-382522328" target="_blank" rel="noopener">
+            <span>LinkedIn</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+          </a>
+          <a href="https://tryhackme.com/p/abdulkadar4416" target="_blank" rel="noopener">
+            <span>TryHackMe</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M17 17V7H7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Syed Abdul Kadar P</p>
+      <p class="footer-note">Chennai, India · Built with vanilla HTML, CSS &amp; JS</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ CASE STUDY DIALOG ============ -->
+  <dialog class="case-dialog" id="caseDialog" aria-labelledby="caseTitle">
+    <div class="case-dialog-inner">
+      <button class="case-close" id="caseClose" aria-label="Close case study">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="case-content" id="caseContent"></div>
+    </div>
+  </dialog>
+
+  <!-- ============ CASE STUDY TEMPLATES ============ -->
+  <template id="case-carenium">
+    <header class="case-header">
+      <p class="case-kicker">Bug bounty · Finding 01</p>
+      <h2 id="caseTitle">Carenium Healthcare — anonymous KYC &amp; passport data disclosure</h2>
+      <div class="case-badges">
+        <span class="severity severity--critical">Critical</span>
+        <span class="case-badge">CVSS 9.1</span>
+        <span class="case-badge">Client-assisted PT</span>
+        <span class="case-badge">Disclosed</span>
+      </div>
+      <p class="case-meta">Target: www.carenium.in · Next.js on Vercel + Supabase · 2026-09-13</p>
+    </header>
+
+    <section class="case-section">
+      <h3>Executive summary</h3>
+      <p>
+        The production web app embedded its Supabase <strong>anonymous API key</strong> in publicly served JavaScript bundles. That key granted unauthenticated read access to the <code>profiles</code> table via PostgREST, exposing the complete PII of registered users: passport photographs, avatars, full street addresses, mobile numbers, emails, Aadhaar and PAN numbers, membership card numbers and health-related columns. A public storage bucket also exposed passport scans.
+      </p>
+      <p>The exposure required no account, no credentials and no session. It was reproduced end-to-end and preserved for disclosure.</p>
+    </section>
+
+    <section class="case-section">
+      <h3>Methodology</h3>
+      <ol class="case-list">
+        <li><strong>Recon</strong> — host enumeration, stack fingerprinting via headers and HTML: Next.js on Vercel.</li>
+        <li><strong>Client-side analysis</strong> — downloaded <code>_next/static/chunks/*.js</code> and grepped for endpoints and keys; recovered the Supabase URL and anon JWT.</li>
+        <li><strong>API discovery</strong> — probed REST (<code>/rest/v1</code>), GraphQL, edge functions and storage endpoints.</li>
+        <li><strong>Validation</strong> — confirmed disclosure, enumerated sensitive columns, counted populated rows, decoded embedded base64 images and verified anonymous object download.</li>
+        <li><strong>Write-path testing</strong> — attempted INSERT/UPDATE/upload; all denied by RLS.</li>
+      </ol>
+    </section>
+
+    <section class="case-section">
+      <h3>Impact at assessment time</h3>
+      <ul class="case-list">
+        <li><code>passport_photo_url</code> populated for 9 users (8 embedded base64, 1 in public storage) — full passport images recoverable.</li>
+        <li><code>aadhar_number</code> 10 rows · <code>pan_number</code> 6 · <code>email</code> 38/38 · <code>phone</code> 20 · <code>mobile</code> 16 · <code>carenium_card_number</code> 10.</li>
+        <li>Full postal addresses and contact numbers, cross-referenceable with names and photos.</li>
+        <li>Health fields (allergies, chronic conditions, blood group) exposed in violation of healthcare-data expectations.</li>
+      </ul>
+      <p class="case-callout">
+        Identity fraud: passport photo + Aadhaar + PAN + address + phone in one payload per victim — enough to open accounts, apply for loans or bypass KYC elsewhere.
+      </p>
+    </section>
+
+    <section class="case-section">
+      <h3>Proof of concept (redacted)</h3>
+      <pre class="case-code"><code># 1. anon key recovered from public JS bundles
+grep -rhoE 'eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}' _next/static/chunks/*.js
+
+# 2. enumerate users + passport photos (no credentials)
+curl -s "https://&lt;proj&gt;.supabase.co/rest/v1/profiles?select=id,full_name,aadhar_number,pan_number,phone,email,address,passport_photo_url&amp;passport_photo_url=not.is.null" \
+  -H "apikey: &lt;anon&gt;" -H "Authorization: Bearer &lt;anon&gt;"
+
+# 3. passport image exfiltration (embedded base64 or public-bucket URL)</code></pre>
+      <p class="case-fineprint">Actual sensitive values (PII) intentionally excluded.</p>
+    </section>
+
+    <section class="case-section">
+      <h3>Remediation</h3>
+      <ul class="case-list">
+        <li>Move data access behind a server-side API; remove the anon key from client bundles.</li>
+        <li>Restrict RLS on <code>profiles</code>: anon may not select PII columns; scope to <code>auth.uid() = id</code> and mask sensitive fields.</li>
+        <li>Make storage private and serve short-lived signed URLs; stop storing base64 images in-table.</li>
+        <li>Remove the GPS schema from the readable surface and add anonymous-read volume alerting.</li>
+      </ul>
+    </section>
+  </template>
+
+  <template id="case-dekco">
+    <header class="case-header">
+      <p class="case-kicker">Bug bounty · Finding 02</p>
+      <h2 id="caseTitle">Dekco — unauthenticated Orthanc PACS admin API exposes patient PHI</h2>
+      <div class="case-badges">
+        <span class="severity severity--critical">Critical</span>
+        <span class="case-badge">CWE-285</span>
+        <span class="case-badge">Report #73328074</span>
+        <span class="case-badge">Under review</span>
+      </div>
+      <p class="case-meta">Target: zfp-direct.dekco.ai · Orthanc 1.12.7 · Scope: pacs.dekco.ai</p>
+    </header>
+
+    <section class="case-section">
+      <h3>Summary</h3>
+      <p>
+        The Dekco imaging viewer proxies an <strong>Orthanc DICOM server</strong> whose full admin REST API (<code>/orthanc/*</code>) is publicly reachable with no authentication. <code>/orthanc/system</code> confirmed <code>IsHttpServerSecure: false</code> and <code>ReadOnly: false</code>.
+      </p>
+      <p>
+        Any internet user can enumerate and download real patients' demographics and raw medical images, and — because the server is not read-only — modify, delete or inject studies. Verified against two independent patients.
+      </p>
+    </section>
+
+    <section class="case-section">
+      <h3>Proof of concept</h3>
+      <pre class="case-code"><code># 1. confirm the API is open and writable
+curl "https://zfp-direct.dekco.ai/orthanc/system"
+# 200 OK → "IsHttpServerSecure": false, "ReadOnly": false
+
+# 2. enumerate every resource ID
+curl "https://zfp-direct.dekco.ai/orthanc/changes" | jq -r '.Changes[] | "\(.ResourceType)\t\(.ID)"'
+
+# 3. download a full study and a raw DICOM image, no auth
+curl -o study.zip "https://zfp-direct.dekco.ai/orthanc/studies/&lt;id&gt;/archive"
+curl -o img.dcm   "https://zfp-direct.dekco.ai/orthanc/instances/&lt;id&gt;/file"</code></pre>
+      <p class="case-fineprint">Patient details redacted for privacy.</p>
+    </section>
+
+    <section class="case-section">
+      <h3>Security impact</h3>
+      <ul class="case-list">
+        <li><strong>Confidentiality (critical):</strong> mass exposure of real patient PHI — name, ID, date of birth, sex, institution, referring physician, study details — plus the images themselves, with zero credentials.</li>
+        <li><strong>Integrity (high):</strong> <code>ReadOnly: false</code> permits bulk delete, modify, anonymise and create-dicom.</li>
+        <li><strong>Availability:</strong> bulk deletion or resource exhaustion disrupts imaging access.</li>
+        <li><strong>Network pivot / SSRF:</strong> DICOM modalities and C-MOVE can be aimed at internal hosts.</li>
+        <li><strong>Regulatory:</strong> real-patient health data exposure (India DPDP Act and equivalents).</li>
+      </ul>
+    </section>
+
+    <section class="case-section">
+      <h3>Recommendations</h3>
+      <ul class="case-list">
+        <li>Enable Orthanc authentication and disable anonymous REST access.</li>
+        <li>Put <code>/orthanc/*</code> behind an authenticated proxy/WAF allowlisted to the trusted viewer origin.</li>
+        <li>Set <code>ReadOnly: true</code> on the exposed path; never expose admin endpoints.</li>
+        <li>Treat as a breach — audit the changes feed, rotate credentials and follow notification obligations.</li>
+        <li>Verify the fix: unauthenticated <code>/orthanc/*</code> requests must return 401/403.</li>
+      </ul>
+    </section>
+  </template>
+
+  <template id="case-vibinex">
+    <header class="case-header">
+      <p class="case-kicker">Bug bounty · Finding 03</p>
+      <h2 id="caseTitle">Vibinex — unauthenticated SQL injection and database write</h2>
+      <div class="case-badges">
+        <span class="severity severity--high">High</span>
+        <span class="case-badge">CWE-89</span>
+        <span class="case-badge">Report #80036429</span>
+        <span class="case-badge">Under review</span>
+      </div>
+      <p class="case-meta">Target: vibinex.com · POST /api/dpu/aliases · Vercel-hosted</p>
+    </header>
+
+    <section class="case-section">
+      <h3>Summary</h3>
+      <p>
+        <code>POST /api/dpu/aliases</code> constructs an <strong>unparameterised SQL UPDATE</strong> from attacker-controlled values (<code>repo_name</code>, <code>repo_owner</code>, <code>repo_provider</code>, <code>aliases</code>). The endpoint is also reachable without authentication — unlike other <code>/api/*</code> handlers, it never calls <code>getServerSession</code>.
+      </p>
+      <p>
+        A single quote produced a measurable HTTP 200 vs 500 differential, demonstrating that attacker input reaches the query unescaped. Further testing showed an error-based oracle that can infer database contents, including user records and OAuth data stored in <code>auth_info</code>.
+      </p>
+    </section>
+
+    <section class="case-section">
+      <h3>Proof of concept</h3>
+      <pre class="case-code"><code># 1. baseline — benign request
+curl -si https://vibinex.com/api/dpu/aliases -X POST \
+  -H 'Content-Type: application/json' \
+  --data '{"repo_name":"repo","repo_owner":"owner","repo_provider":"github","aliases":["a@b.c"]}'
+# HTTP/2 200
+
+# 2. injection trigger — single quote in aliases
+curl -si https://vibinex.com/api/dpu/aliases -X POST \
+  -H 'Content-Type: application/json' \
+  --data '{"repo_name":"repo","repo_owner":"owner","repo_provider":"github","aliases":["x\u0027"]}'
+# HTTP/2 500 → {"error":"Unable to save aliases to DB"}
+
+# 3. second injectable field — quote in repo_name
+--data-raw '{"repo_name":"x\u0027","repo_owner":"o","repo_provider":"github","aliases":["a@b.c"]}'</code></pre>
+    </section>
+
+    <section class="case-section">
+      <h3>Impact</h3>
+      <ul class="case-list">
+        <li>Arbitrary SQL execution against the application database, confirmed via a 200/500 differential.</li>
+        <li>Tampering with <code>repos.aliases</code> — data that drives reviewer-relevance and PR comment generation — poisoning the core review logic.</li>
+        <li>Reading alias/identity mappings for any repository via the unauthenticated GET, enabling team and account enumeration.</li>
+        <li>Potential exposure of users and stored OAuth tokens in <code>auth_info</code>.</li>
+      </ul>
+    </section>
+
+    <section class="case-section">
+      <h3>Remediation</h3>
+      <ul class="case-list">
+        <li>Convert <code>utils/db/aliases.ts</code> to parameterised statements — never concatenate user input into SQL.</li>
+        <li>Require authentication/authorisation on every <code>/api/dpu/*</code> endpoint.</li>
+        <li>Strictly validate repo fields and alias values (for example an email allowlist regex).</li>
+        <li>Restrict DPU endpoints to the trusted service layer and review storage of OAuth tokens.</li>
+      </ul>
+    </section>
+  </template>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
